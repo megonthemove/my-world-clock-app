@@ -27,6 +27,11 @@ footer {
   color: rgba(0, 0, 0, .8);
 }
 
+a {
+  text-decoration: none;
+  color: #A2A8D3;
+}
+
 .container  {
   max-width: 600px;
   margin: 60px auto;
