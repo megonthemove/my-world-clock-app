@@ -1,5 +1,13 @@
 function updateTime() {
 
+let copenhagenElement = document.querySelector("#copenhagen");
+let copenhagenDateElement = copenhagenElement.querySelector(".date");
+let copenhagenTimeElement = copenhagenElement.querySelector(".time");
+let copenhagenTime = moment().tz("Europe/Copenhagen");
+
+copenhagenDateElement.innerHTML = copenhagenTime.format("MMMM Do YYYY");
+copenhagenTimeElement.innerHTML = copenhagenTime.format("h:mm:ss [<small>] A[</small]");
+
 let losAngelesElement = document.querySelector("#los-angeles");
 let losAngelesDateElement = losAngelesElement.querySelector(".date");
 let losAngelesTimeElement = losAngelesElement.querySelector(".time");
